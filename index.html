@@ -7,11 +7,20 @@
     <title>Web Andra</title>
 
     <link rel="stylesheet" href="css/style.css" />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
@@ -21,28 +30,33 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet" /> -->
   </head>
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg shadow-sm"
-      style="height: 100px; z-index: 1000; top: 0">
+      class="navbar navbar-expand-lg sticky-top bg-dark border-bottom border-body"
+      data-bs-theme="dark">
       <div class="container">
-        <a class="navbar-brand" style="font-weight: bold" href="#"
-          ><img src="img/Artboard 1.png" style="width: 100px" alt=""
+        <a class="navbar-brand custom-logo" href="index.html"
+          ><img src="img/Artboard 1.png" alt="" id="logo"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 custom-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"> </span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown">
+          <ul class="navbar-nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -63,13 +77,13 @@
     <!-- Content -->
     <section class="container">
       <div class="row align-items-center" id="home">
-        <div class="col">
+        <div class="col text-center">
           <div class="content">
             <h1 class="display-3" style="font-weight: bold">Hi, I'm Andra</h1>
-            <p class="lead">Frontend Developer</p>
+            <p class="lead">Frontend Developer | UI Designer</p>
             <p id="ket">
-              I made some simple and elegant web design, mobile app, and code
-              them if possible. And of course I love it
+              I made some simple elegant web design and code them. And of course
+              I love it
             </p>
             <a
               href="mailto:madcompsrt@gmail.com"
@@ -80,14 +94,13 @@
             >
           </div>
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <img
             src="img/profil-andra.png"
-            alt="foto andra"
+            alt="profile-pic"
             class="img-fluid float-end"
-            width="500px"
             id="mad" />
-        </div>
+        </div> -->
       </div>
       <div class="blob">
         <svg
@@ -103,22 +116,22 @@
 
     <!-- About -->
     <section class="row bg-dark text-light align-items-center" id="about">
-      <div class="col-3">
+      <div class="col-md-3">
         <img
           src="img/profil-about.png"
           alt="profil about"
           class="img-fluid float-start"
           id="img-abt" />
       </div>
-      <div class="col-9">
+      <div class="col-md-9">
         <div class="container">
           <h2>About me</h2>
           <p>
-            Hi, My name is Muhammad Andra Andianto and usually called Andra or
-            Mad. I'm 21 years old. I'm from Yogyakarta, Indonesia. I'm a student
-            at Amikom Yogyakarta University. I've been interested in design web
-            or app mobile and then code them since I saw a post that appeared on
-            my Instagram page and I think, I can make it :).
+            Hi, My name is Andra. I'm 21 years old. I'm from Yogyakarta,
+            Indonesia. I'm a student at Amikom Yogyakarta University. I've been
+            interested in design web or app mobile and then code them since I
+            saw a post that appeared on my Instagram page and I think, I can
+            make it :).
           </p>
         </div>
       </div>
@@ -139,28 +152,15 @@
             <ion-icon name="logo-javascript"></ion-icon>
             <p>Javascript</p>
           </div>
-          <div class="col">
-            <ion-icon name="logo-css3"></ion-icon>
-            <p>CSS</p>
-          </div>
+        </div>
+        <div class="row text-center" id="icon-skils">
           <div class="col">
             <ion-icon name="logo-figma"></ion-icon>
             <p>Figma</p>
           </div>
-        </div>
-        <br /><br />
-        <div class="row text-center">
           <div class="col">
-            <img src="img/icons8-adobe-illustrator-96.png" alt="photoshop" />
-            <p>Adobe Illustrator</p>
-          </div>
-          <div class="col">
-            <img src="img/icons8-adobe-photoshop-96.png" alt="illustrator" />
-            <p>Adobe Photoshop</p>
-          </div>
-          <div class="col">
-            <img src="img/icons8-adobe-premiere-pro-96.png" alt="premiere" />
-            <p>Adobe Premiere Pro</p>
+            <ion-icon name="logo-css3"></ion-icon>
+            <p>CSS</p>
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@
     <section class="container" id="sertif">
       <div class="row row-cols row-cols-sm g-4">
         <h2 class="text-center">My Certificate</h2>
-        <div class="col">
+        <div class="col-md-4">
           <div class="card">
             <img
               src="img/sertif-2.png"
@@ -181,7 +181,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div class="card">
             <img
               src="img/sertif-3.png"
@@ -192,7 +192,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div class="card">
             <img
               src="img/sertif-1.png"
@@ -261,14 +261,6 @@
         </div>
       </footer>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>

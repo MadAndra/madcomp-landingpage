@@ -1,197 +1,225 @@
-body{
-	max-width: 100%;
+body {
+  max-width: 100%;
 }
-
+.navbar {
+  font-weight: 100;
+  font-size: 20px;
+  height: 100px;
+}
 
 .navbar .nav-item {
-	margin-left: 45px;
+  margin-left: 45px;
 }
-
+#logo {
+  width: 100px;
+}
 .navbar .nav-item .nav-link {
-	padding: 5px 0;
-	position: relative;
+  padding: 5px 0;
+  position: relative;
 }
 
 .navbar .nav-item .nav-link::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 2px;
-	background-color: #A3D5D2;
-	transition: all 0.5s ease;
-	transform: scale(0);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #a3d5d2;
+  transition: all 0.5s ease;
+  transform: scale(0);
 }
 
 .navbar .nav-item .nav-link.active::before,
 .navbar .nav-item .nav-link:hover::before {
-	transform: scale(1);
-}
-
-#ket {
-	max-width: 70%;
+  transform: scale(1);
 }
 
 #home {
-	padding-top: 20px;
-	height: 100vh;
+  padding-top: 20px;
+  height: 100vh;
+  margin-bottom: 0%;
 }
 .blob {
-	position: absolute;
-	top: 0;
-	left: 0;
-	fill: none;
-	stroke: #A3D5D2;
-	width: 30vmax;
-	z-index: -1;
-	animation: move 25s ease-in-out infinite;
-	transform-origin: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+  stroke: #a3d5d2;
+  width: 30vmax;
+  z-index: -1;
+  animation: move 25s ease-in-out infinite;
+  transform-origin: 50% 50%;
 }
 #cus-button {
-	background-color: #13938C;
-	border: #13938C;
+  background-color: #13938c;
+  border: #13938c;
 }
 
 @keyframes move {
-	0% {
-		transform: scale(1) translate(10px, -30px);
-	}
-	38% {
-		transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
-	}
-	40% {
-		transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
-	}
-	78% {
-		transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
-	}
-	80% {
-		transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
-	}
-	100% {
-		transform: scale(1) translate(10px, -30px);
-	}
+  0% {
+    transform: scale(1) translate(10px, -30px);
+  }
+  38% {
+    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+  }
+  40% {
+    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+  }
+  78% {
+    transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
+  }
+  80% {
+    transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
+  }
+  100% {
+    transform: scale(1) translate(10px, -30px);
+  }
 }
 
 #about {
-	padding: 15% 15% 30% 15%;
-	height: 100vh;
+  padding: 15% 15% 30% 15%;
+  height: 100vh;
+}
+
+#mad {
+  width: 500px;
+  max-width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
 }
 
 #img-abt {
-	border-radius: 50%;
-	background-color: #A3D5D2;
-	opacity: 0;
-	transition: ease-in;
+  border-radius: 50%;
+  background-color: #a3d5d2;
+  opacity: 0;
+  transition: ease-in;
 }
 
 #skills {
-	padding: 0%;
+  padding: 0%;
 }
 
 #icon-skils {
-	margin-top: 30px;
-	font-size: 5rem;
+  margin-top: 30px;
+  font-size: 5rem;
 }
 
 #icon-skils p {
-	font-size: 14px;
+  font-size: 16px;
+}
+
+#icon-skils .col ion-icon {
+  font-size: 10rem;
 }
 
 .box {
-	height: 70vh;
-	padding-top: 50px;
-	border-radius: 20px;
-	opacity: 0;
-	transition: ease-in;
+  height: 70vh;
+  padding-top: 50px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: ease-in;
 }
 
 .box {
-	position: relative;
-	top: -130px;
-	padding-bottom: 100px;
+  position: relative;
+  top: -130px;
+  padding-bottom: 100px;
 }
 
 .box h2 {
-	padding-top: 50px;
+  padding-top: 50px;
 }
 
 #sertif {
-	opacity: 0;
-	transition: ease-in;
-	height: 70vh;
+  opacity: 0;
+  transition: ease-in;
+  height: 70vh;
 }
 
 .card {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	margin-bottom: 25%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .card-img-top {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: 0.25s ease-in-out;
-	transition: 0.25s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .card-img-top:hover {
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .footer {
-	padding: 50px 0;
-	color: #f0f9ff;
+  padding: 50px 0;
+  color: #f0f9ff;
 }
 
 .footer .item.social {
-	text-align: center;
+  text-align: center;
 }
 
 .footer .item.social > a {
-	font-size: 20px;
-	width: 36px;
-	height: 36px;
-	line-height: 36px;
-	display: inline-block;
-	text-align: center;
-	border-radius: 50%;
-	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-	margin: 0 8px;
-	color: #fff;
-	opacity: 0.75;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
 }
 
 .footer .item.social > a:hover {
-	opacity: 0.9;
+  opacity: 0.9;
 }
 
 .footer .copyright {
-	text-align: center;
-	padding-top: 24px;
-	opacity: 0.3;
-	font-size: 13px;
-	margin-bottom: 0;
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+  }
+  #logo {
+    width: 80px;
+  }
+  .box {
+    margin-top: 15%;
+    height: 90vh;
+  }
+  #sertif {
+    height: 150vh;
+  }
+}
 /* Menyembunyikan scroll bar biasa pada browser WebKit */
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .waves {
-  position:relative;
+  position: relative;
   width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
 }
 .parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
@@ -211,22 +239,22 @@ body{
 }
 @keyframes move-forever {
   0% {
-   transform: translate3d(-90px,0,0);
+    transform: translate3d(-90px, 0, 0);
   }
-  100% { 
-    transform: translate3d(85px,0,0);
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
 }
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height:40px;
-    min-height:40px;
+    height: 40px;
+    min-height: 40px;
   }
   .content {
-    height:30vh;
+    height: 30vh;
   }
   h1 {
-    font-size:24px;
+    font-size: 24px;
   }
 }
